@@ -5,15 +5,15 @@
   box-sizing: border-box;
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #4caf50;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
   padding: 15px;
   font-size: 24px;
@@ -27,24 +27,70 @@ body {
   margin-top: 60px; /* height of navbar */
 }
 
+/* Default styles for medium and large screens */
 .left-side {
-  position: fixed;
-  width: 25%;
+  width: 25vw; /* Initial width of left sidebar */
   overflow-y: auto;
-  height: calc(100vh - 60px); /* height of navbar */
-  background-color: #f0f0f0;
+  height: calc(100vh - 60px); /* Adjusted height to account for navbar */
+  background-color: #0d6dfd93;
   border-right: 1px solid #ddd;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  transition: left 0.3s ease;
+  z-index: 33;
 }
 
 .right-side {
-  width: 75%;
-  position: fixed;
-  right: 0;
-  top: 60px; /* height of navbar */
-  height: calc(100vh - 60px); /* height of navbar */
-  background-color: #fff;
+  margin-left: 25vw; /* Initial margin to accommodate left sidebar */
+  width: 75vw; /* Initial width of right sidebar */
   padding: 20px;
-  overflow-y: auto;
+  overflow-y: hidden;
+}
+
+.display-none {
+  opacity: 0.2 !important;
+}
+/* Medium devices - Toggle button */
+@media (max-width: 992px) {
+  .left-side {
+    left: -25vw; /* Hide left sidebar by default */
+  }
+
+  .left-side.open {
+    left: 0;
+    width: 40%;
+    
+  }
+
+  .right-side {
+    margin-left: 0; /* Adjust margin to push right sidebar to full width */
+    width: 100%; /* Full width of right sidebar when left sidebar is closed */
+  }
+
+  #toggle-button {
+    display: block; /* Show toggle button */
+  }
+}
+
+/* Small devices - Same behavior as medium devices */
+@media (max-width: 768px) {
+  .left-side {
+    left: -25vw; /* Hide left sidebar by default */
+  }
+
+  .left-side.open {
+    left: 0;
+    width: 100%;
+  }
+
+  .right-side {
+    margin-left: 0; /* Adjust margin to push right sidebar to full width */
+    width: 100%; /* Full width of right sidebar when left sidebar is closed */
+  }
+
+  #toggle-button {
+    display: block; /* Show toggle button */
+  }
 }
