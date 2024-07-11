@@ -20,11 +20,14 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
+.show {
+  right: -1em;
+}
 
 .content {
   display: flex;
   height: 100vh;
-  margin-top: 60px; /* height of navbar */
+  margin-top: 106px; /* height of navbar */
 }
 
 /* Default styles for medium and large screens */
@@ -54,6 +57,9 @@ body {
 }
 /* Medium devices - Toggle button */
 @media (max-width: 992px) {
+  .content {
+    margin-top: 9em;
+  }
   .left-side {
     left: -25vw; /* Hide left sidebar by default */
   }
@@ -61,7 +67,6 @@ body {
   .left-side.open {
     left: 0;
     width: 40%;
-    
   }
 
   .right-side {
@@ -76,6 +81,23 @@ body {
 
 /* Small devices - Same behavior as medium devices */
 @media (max-width: 768px) {
+  .text-title {
+    margin-top: 0px !important;
+
+    letter-spacing: 1.5px;
+  }
+  nav {
+    background-color: transparent !important;
+  }
+  .navbar-brand img {
+    width: 2em !important;
+  }
+  .navbar div button {
+    order: 3;
+  }
+  .content {
+    margin-top: 7.4em;
+  }
   .left-side {
     left: -25vw; /* Hide left sidebar by default */
   }
@@ -92,5 +114,28 @@ body {
 
   #toggle-button {
     display: block; /* Show toggle button */
+  }
+}
+
+@media (max-width: 550px) {
+  .text-title {
+    /* width: 13em; */
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 480px) {
+  .text-title {
+    /* width: 13em; */
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 423px) {
+  .text-title {
+    padding-top: 1.5em;
+    width: 13em;
+    font-size: 16px !important;
+  }
+  nav{
+    padding: 0 !important;
   }
 }

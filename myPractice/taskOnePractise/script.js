@@ -8,3 +8,4 @@ document.addEventListener("DOMContentLoaded", function () {
     rightSidebar.classList.toggle('display-none')
   });
 });
+
