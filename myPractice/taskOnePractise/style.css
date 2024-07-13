@@ -45,6 +45,17 @@ body {
   z-index: 33;
 }
 
+.list-group ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+.list-group ul li {
+  display: flex;
+  align-items: center;
+}
+.list-group ul li i {
+  margin-right: 8px; /* Space between icon and text */
+}
 .right-side {
   margin-left: 25vw; /* Initial margin to accommodate left sidebar */
   width: 75vw; /* Initial width of right sidebar */
