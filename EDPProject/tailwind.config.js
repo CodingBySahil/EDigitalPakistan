@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       colors: {
         white: "#fff",
-        lightseagreen: "#49bbbd",
+        lightseagreen: {
+          "100": "#49bbbd",
+          "200": "rgba(73, 187, 189, 0.6)",
+        },
         mediumslateblue: "#545ae8",
         lightslategray: "#83839a",
         lightsteelblue: {
@@ -23,6 +26,7 @@ module.exports = {
           "400": "rgba(0, 0, 0, 0.87)",
           "500": "rgba(0, 0, 0, 0.54)",
           "600": "rgba(255, 255, 255, 0.87)",
+          "700": "#fffefc",
         },
         darkturquoise: {
           "100": "#33d8ef",
@@ -59,6 +63,7 @@ module.exports = {
         hotpink: "#f3538c",
         darkorange: "#f48c06",
         salmon: "#f56666",
+        mediumseagreen: "#74bf7f",
       },
       spacing: {
         "space-100": "4px",
@@ -76,6 +81,9 @@ module.exports = {
         xl: "20px",
         "lg-2": "18.2px",
         "53xl-8": "72.8px",
+        "17xl": "36px",
+        "21xl": "40px",
+        "14xl": "33px",
       },
     },
     fontSize: {
@@ -92,6 +100,8 @@ module.exports = {
       "17xl": "2.25rem",
       "30xl": "3.063rem",
       inherit: "inherit",
+      xs: "0.75rem",
+      mini: "0.938rem",
     },
   },
   corePlugins: {
