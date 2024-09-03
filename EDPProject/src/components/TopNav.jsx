@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Use react-icons for hamburger and close icons
+import { FaBars, FaTimes } from "react-icons/fa"; 
 
 const TopNav = ({ className = "" }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,21 +12,21 @@ const TopNav = ({ className = "" }) => {
 
   return (
     <div
-      className={`bg-darkgray text-white font-poppins ${className} py-3 px-8 box-border fixed top-0 left-0 right-0 z-50`}
+      className={`bg-darkgray text-xl text-white font-poppins ${className} py-3 px-8 box-border absolute top-0 left-0 right-0 z-50 max-w-screen-2xl mx-auto`}
     >
       {/* Navbar for larger screens */}
       <div className="flex justify-between items-center">
         <img
-          className="w-[18.125rem] h-[4.125rem] object-cover"
+          className="w-56 sm:w-[16.125rem]   md:w-[16.125rem]  lg:w-[16.125rem] xl:w-[18.125rem] h-[4.125rem] "
           alt="EDP Logo"
           src="/edp-logo@2x.png"
         />
-        <div className="hidden lg:flex space-x-6">
-          <Link to={'/home'} className="tracking-[0.02em] no-underline relative text-white">Home</Link>
-          <Link to={'/courses'} className="tracking-[0.02em] no-underline relative text-white">Courses</Link>
-          <Link to={'/instructors'} className="tracking-[0.02em] no-underline relative text-white">Instructors</Link>
-          <Link to={'/blog'} className="tracking-[0.02em] no-underline relative text-white">Blog</Link>
-          <Link to={'/about-us'} className="tracking-[0.02em] no-underline relative text-white">About&nbsp;Us</Link>
+        <div className="hidden lg:flex space-x-3 ">
+          <Link to={'/home'} className=" no-underline relative  text-white">Home</Link>
+          <Link to={'/courses'} className=" no-underline relative  text-white">Courses</Link>
+          <Link to={'/instructors'} className=" no-underline relative  text-white">Instructors</Link>
+          <Link to={'/blog'} className=" no-underline relative  text-white">Blog</Link>
+          <Link to={'/about-us'} className=" no-underline relative  text-white">About&nbsp;Us</Link>
         </div>
         <div className="hidden lg:flex space-x-4">
           <Link

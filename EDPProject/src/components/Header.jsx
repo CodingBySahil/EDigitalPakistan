@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Header = ({ className = "" }) => {
   return (
     <div
-      className={`absolute top-[-0.062rem] left-[0rem] w-[120rem] h-[69.875rem] text-left text-[1.375rem] text-white font-poppins ${className}`}
+      className={`max-w-screen-2xl `}
     >
       <img
         className="absolute top-[0rem] left-[0rem] w-[120rem] h-[69.875rem]"

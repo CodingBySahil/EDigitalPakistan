@@ -8,6 +8,8 @@ import {
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import TopNav from "./components/TopNav";
+import Header from "./components/Header";
 
 function App() {
   const action = useNavigationType();
@@ -50,6 +52,8 @@ function App() {
       <Route path="/" element={<Landing />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/test" element={<Header className=""/>} />
+      <Route path="/navtest" element={<TopNav className="bg-lightseagreen-100"/>} />
     </Routes>
   );
 }
