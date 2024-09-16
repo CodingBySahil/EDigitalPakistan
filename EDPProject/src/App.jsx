@@ -52,10 +52,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Landing />} />
+      <Route path="/" element={<Wrapper />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/test" element={<Wrapper/>} />
+      <Route path="/test" element={<Landing/>} />
       <Route path="/navtest" element={<GroupComponent1/>} />
     </Routes>
   );
