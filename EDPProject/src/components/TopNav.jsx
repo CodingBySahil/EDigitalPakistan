@@ -21,7 +21,7 @@ const TopNav = ({ className = "" }) => {
           alt="EDP Logo"
           src="/edp-logo@2x.png"
         />
-        <div className="hidden lg:flex space-x-3 ">
+        <div className="hidden lg:flex space-x-3 md:space-x-6 lg:space-x-8 ">
           <Link to={'/home'} className=" no-underline relative  text-white">Home</Link>
           <Link to={'/courses'} className=" no-underline relative  text-white">Courses</Link>
           <Link to={'/instructors'} className=" no-underline relative  text-white">Instructors</Link>

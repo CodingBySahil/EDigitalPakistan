@@ -10,6 +10,9 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import TopNav from "./components/TopNav";
 import Header from "./components/Header";
+import AllInOne from "./components/AllInOne";
+import Wrapper from "./pages/Wrapper";
+import GroupComponent1 from "./components/GroupComponent1";
 
 function App() {
   const action = useNavigationType();
@@ -52,8 +55,8 @@ function App() {
       <Route path="/" element={<Landing />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/test" element={<Header className=""/>} />
-      <Route path="/navtest" element={<TopNav className="bg-lightseagreen-100"/>} />
+      <Route path="/test" element={<Wrapper/>} />
+      <Route path="/navtest" element={<GroupComponent1/>} />
     </Routes>
   );
 }

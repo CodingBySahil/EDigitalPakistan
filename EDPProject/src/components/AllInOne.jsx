@@ -2,55 +2,80 @@ import PropTypes from "prop-types";
 
 const AllInOne = ({ className = "" }) => {
   return (
-    <div
-      className={`absolute top-[74.563rem] left-[14.063rem] w-[91.875rem] h-[48.563rem] text-center text-[1.875rem] text-darkslateblue-200 font-poppins ${className}`}
-    >
-      <b className="absolute top-[0rem] left-[38.25rem] text-[2.25rem] leading-[180%] text-left">
-        <span className="whitespace-pre-wrap">{`How it  `}</span>
-        <span className="text-turquoise">Works</span>
-      </b>
-      <div className="absolute top-[6.313rem] left-[20rem] text-[1.5rem] leading-[180%] text-slategray-100 inline-block w-[52.313rem]">
-        TOTC is one powerful online software suite that combines all the tools
-        needed to run a successful school or office.
+    <section className={`py-12 ${className} mt-[68rem]`} >
+      <div className="text-center mb-10 px-4 md:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-blue-900">
+          How it <span className="text-green-500">Works</span>
+        </h2>
+        <p className="mt-4 text-dimgray max-w-2xl mx-auto">
+          TOTC is one powerful online software suite that combines all the tools
+          needed to run a successful school or office.
+        </p>
       </div>
-      <div className="absolute top-[21.688rem] left-[0rem] shadow-[0px_10px_60px_rgba(38,_45,_118,_0.08)] rounded-xl bg-white w-[28.125rem] h-[26.875rem]" />
-      <div className="absolute top-[21.688rem] left-[31.875rem] shadow-[0px_10px_60px_rgba(38,_45,_118,_0.08)] rounded-xl bg-white w-[28.125rem] h-[26.875rem]" />
-      <div className="absolute top-[21.688rem] left-[63.75rem] shadow-[0px_10px_60px_rgba(38,_45,_118,_0.08)] rounded-xl bg-white w-[28.125rem] h-[26.875rem]" />
-      <div className="absolute top-[26.688rem] left-[3.125rem] font-medium inline-block w-[21.438rem]">
-        Select the Grade/Class that you are in.
+
+      <div className="flex flex-col md:flex-row justify-between items-stretch gap-8 px-4 md:px-6 lg:px-8">
+        {/* Card 1 */}
+        <div className="bg-whitesmoke text-dimgray shadow-lg rounded-lg p-6 md:p-8 lg:p-10 text-center flex-1 flex flex-col justify-between">
+          <div>
+            <div className="flex justify-center mb-4">
+              <img
+                className="w-[6.25rem] h-[6.25rem] md:w-[8rem] md:h-[8rem] lg:w-[10rem] lg:h-[10rem]"
+                alt=""
+                src="/group-80.svg"
+              />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 ">
+              Select the Grade/Class that you are in.
+            </h3>
+            <p>
+              You can select any grade that you want to study in. We offer
+              flexibility for all.
+            </p>
+          </div>
+        </div>
+
+        {/* Card 2 */}
+        <div className="bg-whitesmoke text-dimgray shadow-lg rounded-lg p-6 md:p-8 lg:p-10 text-center flex-1 flex flex-col justify-between">
+          <div>
+            <div className="flex justify-center mb-4">
+              <img
+                className="w-[6.25rem] h-[6.25rem] md:w-[8rem] md:h-[8rem] lg:w-[10rem] lg:h-[10rem]"
+                alt=""
+                src="/group-81.svg"
+              />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 ">
+              Study the textbooks at your own pace with flexibility.
+            </h3>
+            <p>
+              You can study any course, any topic at your convenience. In each
+              topic, you can do exercises, reading, pronunciation, word
+              meanings, etc.
+            </p>
+          </div>
+        </div>
+
+        {/* Card 3 */}
+        <div className="bg-whitesmoke text-dimgray shadow-lg rounded-lg p-6 md:p-8 lg:p-10 text-center flex-1 flex flex-col justify-between">
+          <div>
+            <div className="flex justify-center mb-4">
+              <img
+                className="w-[6.25rem] h-[6.25rem] md:w-[8rem] md:h-[8rem] lg:w-[10rem] lg:h-[10rem]"
+                alt=""
+                src="/group-79.svg"
+              />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 ">
+              Pay for the additional lessons - if you like it
+            </h3>
+            <p>
+              The first lesson is free - pay for the rest with EasyPaisa. This
+              will help us add more content and subjects.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="absolute top-[26.688rem] left-[34.875rem] font-medium inline-block w-[21.563rem]">
-        study the textbooks at your own face with flexibility.
-      </div>
-      <div className="absolute top-[26.688rem] left-[67.438rem] font-medium">
-        <p className="m-0">{`Pay for the additional `}</p>
-        <p className="m-0">lessons - if you like it</p>
-      </div>
-      <div className="absolute top-[36.438rem] left-[3.438rem] text-[1.25rem] leading-[180%] text-slategray-100 inline-block w-[21.313rem]">
-        you can select any grade that you want to study in.we are flexible offer
-        all.
-      </div>
-      <div className="absolute top-[36.438rem] left-[34.188rem] text-[1.25rem] leading-[180%] text-slategray-100 inline-block w-[23.563rem]">{`you can study any course, any topic at your convenience. in each topic, you can do the exercise, reading, pronunciation,, words meaning etc. `}</div>
-      <div className="absolute top-[36.438rem] left-[68.375rem] text-[1.25rem] leading-[180%] text-slategray-100 inline-block w-[19.938rem]">
-        The first lesson is free - pay for the rest with easypaisa. This will
-        help us to add more contents and subjects.
-      </div>
-      <img
-        className="absolute top-[18.125rem] left-[42.813rem] w-[6.25rem] h-[6.25rem]"
-        alt=""
-        src="/group-80.svg"
-      />
-      <img
-        className="absolute top-[18.125rem] left-[74.688rem] w-[6.25rem] h-[6.25rem]"
-        alt=""
-        src="/group-81.svg"
-      />
-      <img
-        className="absolute top-[18.125rem] left-[10.938rem] w-[6.25rem] h-[6.25rem]"
-        alt=""
-        src="/group-79.svg"
-      />
-    </div>
+    </section>
   );
 };
 
