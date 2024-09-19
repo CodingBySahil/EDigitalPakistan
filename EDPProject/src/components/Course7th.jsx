@@ -27,7 +27,7 @@ const Course7th = () => {
       <div className="py-8 bg-[#ebf5ff] min-h-screen">
         {/* Class Title */}
         <div className="bg-red text-white px-6 py-2 rounded-md shadow-md w-fit text-lg mb-6">
-          Class 6th
+          Class 7th
         </div>
 
         {/* Subject Cards Container */}
